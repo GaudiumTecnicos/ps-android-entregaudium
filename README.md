@@ -124,7 +124,7 @@ Na etapa **ENTREGANDO**, exibir o endereço da entrega atual abaixo da mensagem 
 **Dica:** O endereço da entrega não está na estrutura *hard-coded*, mas também é retornado pela API chamada. Faça os devidos ajustes para utiliza-lo nesta tarefa.
 
 #### 2.3 Ofertas não podem durar para sempre <!-- 25 minutos -->
-No menu com as opções de Rejeitar ou Aceitar, que é exibido no estado *Decidindo* do objeto entregador, inserir um timer de 20 segundos com feedback visual para a oferta sumir, permitindo que o usuário acompanhe o progresso do tempo restante. Após esse tempo, voltar o entregador para o estado *Disponível*.
+No menu com as opções de Rejeitar ou Aceitar, que é exibido no estado *Decidindo* do objeto entregador, inserir um timer de 15 segundos com feedback visual para a oferta sumir, permitindo que o usuário acompanhe o progresso do tempo restante. Após esse tempo, voltar o entregador para o estado *Disponível*.
 
 <img src="imgs/t-dec-timer.png" width="320">
 
@@ -142,7 +142,7 @@ A tela possui as seguintes regras:
 - Os dados são exibidos no final da tela
 - A foto do entregador preenche o espaço faltante entre o topo da tela até a view contendo a descrição do perfil, ficando atrás da view semi-transparente. 
 - A foto do entregador será fixa e já está presente no projeto com o nome `img_entregador.png`
-- Os 3 indicadores inferiores ocupam igualmente toda a largura da tela, e cada um está centralizado dentro de seu espaço. Entre eles existe uma view de `3px` na cor `#82B4FF`.
+- Os 3 indicadores inferiores ocupam igualmente toda a largura da tela, e cada um está centralizado dentro de seu espaço. Entre eles existe uma view de `3px` na cor `#82B4FE`.
 - As imagens utilizadas pelos 3 indicadores já estão presentes no projeto e podem ser encontradas a partir dos nomes, na ordem de exibição da imagem:
      - `ic_entregas.xml`
      - `ic_saldo.xml`
@@ -153,8 +153,8 @@ A tela possui as seguintes regras:
 
 As cores utilizadas pelos menus são as seguintes:
 - View semi-transparente: `#CC2B76C9`
-- View inferior: `#2E91FF`
-- Separador entre as estatísticas: `#82B4FF`
+- View inferior: `#2E91FE`
+- Separador entre as estatísticas: `#82B4FE`
 
 Para os textos da tela, seguem as fontes e tamanhos que devem ser utilizados:
 - O nome do entregador (Augusto Prado) usa a fonte `open_sans`, já existente no projeto, com tamanho de `24sp` na cor `#FFFFFF`
